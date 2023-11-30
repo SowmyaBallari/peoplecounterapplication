@@ -5,7 +5,6 @@
 This project is a people counter application designed for our library to track the number of people utilizing different spaces. The goal is to analyze usage patterns, renovate less used spaces, and provide better resources to more frequently used areas. Additionally, the application employs machine learning prediction models to estimate the number of people expected during finals week, helping to determine whether there's a need to open the library for extended hours.
 
 ## Technologies Used
-
 - HTML
 - CSS
 - JavaScript

@@ -13,13 +13,11 @@ foreach($data as $row){
     $current_time = date("H:i:s");
     
     $countVar = $count;
-
   if($countVar === NULL) {
     $countStr = "NULL";
   } else {
     $countStr = "'$countVar'";
-  }
-    
+  } 
  
     $sql = "INSERT INTO new_headcounts (Location, Headcount, Date,Time,Employee_Name) VALUES ('$room', $countStr, NOW(),'$current_time','$employeeName')";
 

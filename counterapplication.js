@@ -11,7 +11,6 @@ floor2Img = document.getElementById('floor-2-img');
 floor1Icon = document.getElementById('floor-1-icon');
 floor2Icon = document.getElementById('floor-2-icon');
 const modal = document.getElementById('image-modal');
-
 // Initially hide table
 table1.style.display = "none"; 
 table2.style.display = "none";
@@ -45,7 +44,6 @@ gardenlevelBtn.addEventListener("click", () => {
   savingData.style.display = "block";
   
 });
-
 // code to show image and hideimage when clicked on Map Icon
 
 floor1Icon.addEventListener('click', () => {
