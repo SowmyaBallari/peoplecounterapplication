@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>  
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+      <link rel="stylesheet" href="counterapplication.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Headcount Input</title>
+ 
+ 
+      
+ 
+</head>
+<body>
+  
+  <div class="container">
+   <h1 class="page-title">PEOPLE COUNTER</h1>
+     <div class="floor-selector">
+        <div class="btn-group" role="group"  >
+            <button type="button" class="btn-primar" id="garden-level">Garden Level</button>
+            <button type="button" class="btn-primar" id="floor-1-btn">Floor 1
+            <div class="button-group-append">
+      <span class="button-group-text">
+        <i class="material-icons" id="floor-1-icon" style="font-size:20px;color:red">place</i>
+      </span>
+    </div>
+            </button>
+         <button type="button" class="btn-primar" id="floor-2-btn">Floor2/Floor3
+          <div class="button-group-append">
+      <span class="button-group-text">
+        <i class="material-icons" id="floor-2-icon" style="font-size:20px;color:red">place</i>
+      </span>
+    </div> 
+         </button>
+    </div>
+    </div>
+    <div class="table-container" id="tables">
+   <table id= "tabledata" >
+  <thead>
+      <tr>
+    <th>Room</th>
+    <th>HeadCounts</th>
+    </tr>
+    
+  </thead>
+  <tbody>
+  <tr>
+     
+    <td for="yosemitearea">Yosemite Area</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="yosemitearea"> <!--counts will be added!-->
+  
+   </div>
+  </td>
+</tr>
+
+  <tr>
+    <td for= "yosemitelab">Yosemite Lab</td>
+     <td>
+   <div class="input-group">
+    <input type="number" min="0" id="yosemitelab">
+    
+      
+   </div>
+  </td>
+   </tr>
+   
+   <tr>
+    <td for = "sierralab">Sierra</td>
+     <td>
+   <div class="input-group">
+    <input type="number" min="0" id="sierralab">
+    
+   </div>
+  </td>
+    </tr>
+    
+    <tr>
+    <td for="studio">360 Studio</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="studio">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="digitalwall">Digital Wall</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="digitalwall">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="cube">Cube</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="cube">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="starbucks">Starbucks</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="starbucks">
+    
+   </div>
+  </td>
+  </tr>
+  
+   <tr>
+   <td for="muirexperience">Muir Experience</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="muirexperience">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="living">Living Room and Printers</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="living">
+    
+   </div>
+  </td>
+  </tr>
+  
+   <tr>
+   <td for="hightables">1 Floor High Tables</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="hightables">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room123">Room 123</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room123">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="studyarea">1 Floor Study Area Tables and Pods</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="studyarea">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room107">Room 107</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room107">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room108">Room 108</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room108">
+    </div>
+  </td>
+  </tr>
+  
+ 
+  
+  <tr>
+   <td for="room110">Room 110</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room110">
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room111">Room 111</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room111">
+    
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room112">Room 112</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room112">
+    
+    
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room113">Room 113</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room113">
+    
+    
+   </div>
+  </td>
+  </tr>
+ </table>
+  
+<!-- Floor2/Floor 3 Table data !-->
+
+<table id= "tabledata2" >
+  <thead>
+      <tr>
+          <th>Room</th>
+          <th>HeadCounts</th>
+    </tr>
+    
+  </thead>
+  <tbody>
+  <tr>
+     
+    <td for="room210">Room 210</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room210"> <!--counts will be added!-->
+   </div>
+  </td>
+</tr>
+
+  <tr>
+    <td for= "room211">Room 211</td>
+     <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room211">
+   </div>
+  </td>
+   </tr>
+    <tr>
+    <td for= "room212">Room 212</td>
+     <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room212">
+   </div>
+  </td>
+   </tr>
+   
+   <tr>
+    <td for = "room213">Room 213</td>
+     <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room213">
+   </div>
+  </td>
+    </tr>
+    
+ 
+  
+  <tr>
+   <td for="rainbow">Rainbow Room</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="rainbow">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="north">2nd Floor Study Area North</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="north">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="2ndfloorHighTables">2nd Floor High Tables</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="2ndfloorHighTables">
+   </div>
+  </td>
+  </tr>
+  
+   <tr>
+   <td for="room220">Room 220</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room220">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room221">Room 221</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room221">
+   </div>
+  </td>
+  </tr>
+  
+   <tr>
+   <td for="room222">Room 222</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room222">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room223">Room 223</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room223">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room224">Room 224</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room224">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="south">2nd Floor Study Area South</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="south">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room241">Room 241</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room241">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room242">Room 242</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room242">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room243">Room 243</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room243">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="room244">Room 244</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="room244">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="west">2nd Floor Study Area West</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="west">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="tutoring">Tutoring Center</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="tutoring">
+   </div>
+  </td>
+  </tr>
+  
+  <tr>
+   <td for="writingcenter">Writing Center</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="writingcenter">
+   </div>
+  </td>
+  </tr>
+  <tr>
+   <td for="meditationHall">Multifaith Meditation and Prayer Hall</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="meditationHallr">
+   </div>
+  </td>
+  </tr>
+
+ 
+  <tr>
+   <td for="learningLab" >3rd Floor Learning Lab and Study Area</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="learningLab">
+   </div>
+  </td>
+  </tr>
+     </tbody> 
+</table>
+
+<!-- Garden Level Table data !-->
+
+<table id= "tabledata3" >
+  <thead>
+      <tr>
+          <th>Room</th>
+          <th>HeadCounts</th>
+    </tr>
+    
+  </thead>
+  <tbody>
+  <tr>
+     
+    <td for="gardenlevel">Garden Level</td>
+    <td>
+   <div class="input-group">
+    <input type="number" min="0" id="gardenlevel"> <!--counts will be added!-->
+   </div>
+  </td>
+</tr>
+
+  <tr>
+    <td for= "archives">Special Collections</td>
+     <td>
+   <div class="input-group">
+    <input type="number" min="0" id="archives">
+   </div>
+  </td>
+   </tr>
+   </tbody>
+   </table>
+   </div>
+   
+   <div class="button-container" id="savingData" style="Margin-top:10pt">
+    <input type="text" id="employeeName" name="employeeName" placeholder="Enter Your First and Last Name" required /><br>
+    <button type="submit" class="SaveData" id="submit-btn">Save Data</button>
+    </div>
+</div>
+
+
+<div class ="modal" id="image-modal">
+    <div class ="modal-content">
+        <img src="Images/1.png" id="floor-1-img">
+        <img src="Images/2.png" id="floor-2-img">
+    </div>
+</div>
+
+
+ 
+  
+
+
+ <script src="counterapplication.js"></script>
+  
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
