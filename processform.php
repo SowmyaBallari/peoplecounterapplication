@@ -4,7 +4,6 @@ ini_set('session.gc_maxlifetime', 86400);
 include_once 'new_database.php';
 date_default_timezone_set('America/Los_Angeles');
 $data = json_decode(file_get_contents('php://input'), true);
-
 foreach($data as $row){
     $room = $row['room'];
     $count = $row['count'];

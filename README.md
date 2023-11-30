@@ -17,5 +17,4 @@ This project is a people counter application designed for our library to track t
 - Analysis of usage patterns.
 - Prediction models for estimating usage during finals week.
 - Decision support for extending library hours.
-
 Feel free to adjust the instructions as needed, and make sure to include any specific details or paths related to your project's structure and setup.

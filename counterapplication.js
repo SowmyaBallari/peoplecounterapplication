@@ -67,7 +67,6 @@ window.addEventListener("click", (event) => {
  
 });
 
-
 // SAVING THE DATA
 
 
