@@ -17,7 +17,7 @@ foreach($data as $row){
   } else {
     $countStr = "'$countVar'";
   } 
- 
+
     $sql = "INSERT INTO new_headcounts (Location, Headcount, Date,Time,Employee_Name) VALUES ('$room', $countStr, NOW(),'$current_time','$employeeName')";
 
     if ($conn->query($sql) === TRUE) {

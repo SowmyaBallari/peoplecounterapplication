@@ -69,7 +69,6 @@ window.addEventListener("click", (event) => {
 
 // SAVING THE DATA
 
-
 const submitBtn = document.getElementById('submit-btn');  
 
  let data = [];
